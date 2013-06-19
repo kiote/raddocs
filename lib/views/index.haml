@@ -1,4 +1,22 @@
-%h1= api_name
+.page-header
+  %h1 Pelesend REST API Reference
+  %p.lead{:style => "font-size: 21px;font-weight: 200;line-height: 30px;margin-bottom: 20px;padding-left:0;padding-top:0;"} Pelesend provides developers a simple, yet powerful REST + XML or JSON API enabling developers easy-to-use and secure health data access.
+  %h2
+    %em General Concepts
+  %section
+    %h3{:style => "color:#75A712"} Register your application
+    %p
+      To start integrating your application with the Pelesend API, you will need to register your application. To register your application, visit
+      %a{:href => ""} Pelesend's Central Users Portal
+  %section
+    %h3{:style => "color:#75A712"} Base URL
+    %p All URLs referenced in the API documentation begin with the folloing base URL:
+    .well.well-large https://api.pelesend.com/v1
+  %section
+    %h3{:style => "color:#75A712"} Authentication
+    %p When integrating your application with Pelesend, you must use OAuth 2. OAuth 2 allows users to authorize your application to use their Pelesend medical data on their behalf without having to copy/paste API tokens or touch sensitive login info. To learn more about how to
+  %h2
+    %em API stil under development
 
 - index["resources"].each do |resource|
   .resource
